@@ -106,8 +106,12 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
       ),
-      floatingActionButton:
-          FloatingActionButton(onPressed: () {}, child: const Icon(Icons.add)),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          debugPrint('clicked the button');
+        },
+        child: const Icon(Icons.add),
+      ),
     );
   }
 }
